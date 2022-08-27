@@ -22,15 +22,15 @@ function createCardOfGallery(galleryItems) {
 gallery.insertAdjacentHTML("beforeend", createGallery);
 
 
-let lightbox = new SimpleLightbox('.gallery a',
-    {
-    captionsData: "alt",
-    captionDelay: 250,
-    captionPosition: "bottom",
-    })
-    ;
+// let lightbox = new SimpleLightbox('.gallery a',
+//     {
+//     captionsData: "alt",
+//     captionDelay: 250,
+//     captionPosition: "bottom",
+//     })
+//     ;
 
-lightbox.on('show.simplelightbox', function () {
+SimpleLightbox.on('show.simplelightbox', function () {
 });
 
 
